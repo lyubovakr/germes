@@ -4,7 +4,7 @@ pipeline {
     stage('unit') {
       agent any
       environment {
-        PATH = 'C:\\Program Files\\Maven\\apache-maven-3.6.0\\bin'
+        PATH = '%PUTH%;C:\\Program Files\\Maven\\apache-maven-3.6.0\\bin'
       }
       steps {
         bat 'Unit test'
